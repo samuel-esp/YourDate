@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gNn-c4-ydP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--LogIn VIew Controller-->
+        <!--LogIn VIewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="LogIn VIew Controller" id="BYZ-38-t0r" customClass="ViewController" customModule="YourDate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="LogIn VIewController" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="YourDate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wNr-Rq-Xgn"/>
                         <viewControllerLayoutGuide type="bottom" id="EqB-rl-qED"/>
@@ -109,15 +109,19 @@
                             <constraint firstItem="9KY-BS-rV6" firstAttribute="top" secondItem="wNr-Rq-Xgn" secondAttribute="bottom" constant="76" id="zBF-hM-GnM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="MrJ-4h-qWr" kind="presentation" id="rqe-VQ-xgz"/>
+                        <segue destination="78g-Uw-dJH" kind="presentation" id="hGd-FG-OFA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+            <point key="canvasLocation" x="-1814" y="-13"/>
         </scene>
         <!--SignUp View Controller-->
         <scene sceneID="h4e-8l-7bd">
             <objects>
-                <viewController title="SignUp View Controller" id="78g-Uw-dJH" sceneMemberID="viewController">
+                <viewController title="SignUp View Controller" modalPresentationStyle="fullScreen" id="78g-Uw-dJH" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ouq-Yo-kkl"/>
                         <viewControllerLayoutGuide type="bottom" id="e5L-Tg-UML"/>
@@ -319,15 +323,18 @@
                             <constraint firstAttribute="trailingMargin" secondItem="6FV-d5-PgA" secondAttribute="trailing" constant="28" id="zB6-Su-pF9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="MrJ-4h-qWr" kind="presentation" id="sGw-Ex-KVP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sFX-mb-h6t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1658" y="139"/>
+            <point key="canvasLocation" x="-1814" y="-944"/>
         </scene>
         <!--LogIn2 View Controller-->
         <scene sceneID="YHF-Xh-cOa">
             <objects>
-                <viewController title="LogIn2 View Controller" id="MrJ-4h-qWr" sceneMemberID="viewController">
+                <viewController title="LogIn2 View Controller" modalPresentationStyle="fullScreen" id="MrJ-4h-qWr" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="auL-FH-Mb5"/>
                         <viewControllerLayoutGuide type="bottom" id="2V9-UP-R0Q"/>
@@ -484,15 +491,19 @@
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="qto-GW-vvs" secondAttribute="trailing" id="zli-wE-6sh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="78g-Uw-dJH" kind="presentation" id="ccE-GZ-Twl"/>
+                        <segue destination="y2L-hY-1wu" kind="presentation" id="xGm-lY-PLU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wde-kk-Ftt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="893" y="139"/>
+            <point key="canvasLocation" x="-1814" y="970"/>
         </scene>
         <!--ForgotYourPassword isView Controller-->
         <scene sceneID="Dc5-Z7-rXB">
             <objects>
-                <viewController title="ForgotYourPassword isView Controller" id="y2L-hY-1wu" sceneMemberID="viewController">
+                <viewController title="ForgotYourPassword isView Controller" modalPresentationStyle="fullScreen" id="y2L-hY-1wu" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D0W-5W-s2z"/>
                         <viewControllerLayoutGuide type="bottom" id="RG4-1y-9nS"/>
@@ -613,14 +624,56 @@
                             <constraint firstItem="K6H-de-VIh" firstAttribute="leading" secondItem="kye-xG-rSA" secondAttribute="leadingMargin" constant="29" id="vAE-HX-eZI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="MrJ-4h-qWr" kind="presentation" id="mgA-JQ-IQI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLZ-eM-CzK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="892.75362318840587" y="814.95535714285711"/>
+            <point key="canvasLocation" x="-3100" y="969"/>
+        </scene>
+        <!--LaunchScreen ViewController-->
+        <scene sceneID="UPh-2m-xfj">
+            <objects>
+                <viewController title="LaunchScreen ViewController" id="gNn-c4-ydP" customClass="LaunchScreenViewController" customModule="YourDate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TJL-XI-B0Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="pLL-b7-Obz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q6o-tb-LBj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOURDATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bb9-k5-1fZ">
+                                <rect key="frame" x="89" y="416" width="237.5" height="65"/>
+                                <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="44"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pLL-b7-Obz" firstAttribute="top" secondItem="bb9-k5-1fZ" secondAttribute="bottom" constant="381" id="2VZ-uh-zak"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bb9-k5-1fZ" secondAttribute="trailing" constant="67.5" id="czM-jz-Cse"/>
+                            <constraint firstItem="bb9-k5-1fZ" firstAttribute="top" secondItem="TJL-XI-B0Y" secondAttribute="bottom" constant="372" id="deq-HJ-dt3"/>
+                            <constraint firstItem="bb9-k5-1fZ" firstAttribute="leading" secondItem="Q6o-tb-LBj" secondAttribute="leadingMargin" constant="69" id="nlR-QJ-ZmD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="launchScreenSegue" id="1m0-bP-3rG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5I-sQ-8rU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3100" y="-13"/>
         </scene>
     </scenes>
     <resources>
         <image name="Google" width="316" height="48"/>
         <image name="facebook" width="316" height="48"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mgA-JQ-IQI"/>
+        <segue reference="ccE-GZ-Twl"/>
+    </inferredMetricsTieBreakers>
 </document>
