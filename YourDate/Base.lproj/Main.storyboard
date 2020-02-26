@@ -83,6 +83,11 @@
                                     <constraint firstItem="TPy-5N-zVQ" firstAttribute="top" secondItem="KHW-9D-p0a" secondAttribute="top" constant="14" id="JYf-oe-8xc"/>
                                     <constraint firstItem="TPy-5N-zVQ" firstAttribute="leading" secondItem="KHW-9D-p0a" secondAttribute="leading" constant="88" id="OcA-Hb-ZwO"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -153,8 +158,14 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WaC-8f-Vvn">
                                         <rect key="frame" x="0.0" y="0.0" width="316" height="49"/>
+                                        <color key="textColor" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -165,14 +176,25 @@
                                     <constraint firstAttribute="bottom" secondItem="WaC-8f-Vvn" secondAttribute="bottom" id="oeF-v5-ZGt"/>
                                     <constraint firstAttribute="height" constant="49" id="u0E-Hs-DL9"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wb0-7X-glf">
                                 <rect key="frame" x="48" y="386" width="316" height="49"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DO9-dN-UYB">
                                         <rect key="frame" x="0.0" y="0.0" width="316" height="49"/>
+                                        <color key="textColor" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -183,14 +205,25 @@
                                     <constraint firstAttribute="height" constant="49" id="qaF-Kb-dev"/>
                                     <constraint firstAttribute="bottom" secondItem="DO9-dN-UYB" secondAttribute="bottom" id="x6h-Lm-5oU"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7VI-Mx-VuS">
                                 <rect key="frame" x="50" y="455" width="316" height="49"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OTf-hL-cIk">
                                         <rect key="frame" x="0.0" y="0.0" width="316" height="49"/>
+                                        <color key="textColor" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -201,14 +234,25 @@
                                     <constraint firstItem="OTf-hL-cIk" firstAttribute="top" secondItem="7VI-Mx-VuS" secondAttribute="top" id="PLG-eN-lfP"/>
                                     <constraint firstItem="OTf-hL-cIk" firstAttribute="leading" secondItem="7VI-Mx-VuS" secondAttribute="leading" id="nlg-X7-4b9"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdp-a6-wDW">
                                 <rect key="frame" x="50" y="524" width="316" height="49"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gFd-Pp-lcs">
                                         <rect key="frame" x="0.0" y="0.0" width="316" height="49"/>
+                                        <color key="textColor" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -219,6 +263,11 @@
                                     <constraint firstAttribute="height" constant="49" id="csa-4S-TNc"/>
                                     <constraint firstItem="gFd-Pp-lcs" firstAttribute="leading" secondItem="jdp-a6-wDW" secondAttribute="leading" id="izN-Bb-Tk7"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6FV-d5-PgA">
                                 <rect key="frame" x="50" y="593" width="316" height="49"/>
@@ -238,6 +287,11 @@
                                     <constraint firstAttribute="height" constant="49" id="t2Z-DR-FEM"/>
                                     <constraint firstItem="wBb-JG-gKI" firstAttribute="leading" secondItem="6FV-d5-PgA" secondAttribute="leading" constant="127" id="zg8-uV-Y7w"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -268,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sFX-mb-h6t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="908.69565217391312" y="138.61607142857142"/>
+            <point key="canvasLocation" x="893" y="819"/>
         </scene>
         <!--LogIn2 View Controller-->
         <scene sceneID="YHF-Xh-cOa">
@@ -293,8 +347,14 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NrH-Z2-anm">
                                         <rect key="frame" x="0.0" y="0.0" width="316" height="49"/>
+                                        <color key="textColor" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -305,6 +365,11 @@
                                     <constraint firstItem="NrH-Z2-anm" firstAttribute="top" secondItem="DZr-pC-veR" secondAttribute="top" id="e1o-pG-iPZ"/>
                                     <constraint firstAttribute="height" constant="49" id="urg-Ew-xXJ"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHT-rg-mcc">
                                 <rect key="frame" x="49" y="593" width="316" height="49"/>
@@ -324,14 +389,25 @@
                                     <constraint firstAttribute="height" constant="49" id="fq0-cN-E1h"/>
                                     <constraint firstItem="wLb-jF-bdS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CHT-rg-mcc" secondAttribute="leading" constant="20" symbolic="YES" id="wKU-YN-FFN"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJh-gb-kQE">
                                 <rect key="frame" x="49" y="455" width="316" height="49"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rnm-pI-yxr">
                                         <rect key="frame" x="0.0" y="0.0" width="316" height="49"/>
+                                        <color key="textColor" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -342,6 +418,11 @@
                                     <constraint firstAttribute="height" constant="49" id="d0u-t5-rvM"/>
                                     <constraint firstAttribute="bottom" secondItem="Rnm-pI-yxr" secondAttribute="bottom" id="sIJ-8b-NuM"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ug-at-r9J">
                                 <rect key="frame" x="129" y="843" width="156" height="37"/>
@@ -361,10 +442,30 @@
                                     </attributedString>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yuc-wk-chM">
+                                <rect key="frame" x="120" y="657" width="184" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="uaR-4V-9pt"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Forgot Your Password?">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="Avenir-Book"/>
+                                                <font key="NSOriginalFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="DZr-pC-veR" secondAttribute="trailing" constant="29" id="2hl-Az-nfV"/>
+                            <constraint firstItem="Yuc-wk-chM" firstAttribute="leading" secondItem="SLi-Mf-5B2" secondAttribute="leadingMargin" constant="100" id="4ik-mv-Qpi"/>
                             <constraint firstItem="OJh-gb-kQE" firstAttribute="leading" secondItem="SLi-Mf-5B2" secondAttribute="leadingMargin" constant="29" id="6bE-gJ-Omc"/>
                             <constraint firstItem="OJh-gb-kQE" firstAttribute="top" secondItem="qto-GW-vvs" secondAttribute="bottom" constant="278.5" id="BqQ-Vt-OcV"/>
                             <constraint firstAttribute="bottom" secondItem="1Ug-at-r9J" secondAttribute="bottom" constant="16" id="DaW-4y-5I3"/>
@@ -375,16 +476,18 @@
                             <constraint firstItem="CHT-rg-mcc" firstAttribute="top" secondItem="DZr-pC-veR" secondAttribute="bottom" constant="20" id="VRJ-h0-xtk"/>
                             <constraint firstItem="DZr-pC-veR" firstAttribute="leading" secondItem="SLi-Mf-5B2" secondAttribute="leadingMargin" constant="29" id="bHW-Rp-6gu"/>
                             <constraint firstItem="qto-GW-vvs" firstAttribute="top" secondItem="auL-FH-Mb5" secondAttribute="bottom" constant="72" id="bN4-Eg-hfv"/>
+                            <constraint firstItem="Yuc-wk-chM" firstAttribute="top" secondItem="CHT-rg-mcc" secondAttribute="bottom" constant="15" id="f5U-j9-A11"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OJh-gb-kQE" secondAttribute="trailing" constant="29" id="fSA-l7-WSP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CHT-rg-mcc" secondAttribute="trailing" constant="29" id="l0J-U4-X89"/>
                             <constraint firstItem="CHT-rg-mcc" firstAttribute="leading" secondItem="SLi-Mf-5B2" secondAttribute="leadingMargin" constant="29" id="nMk-xp-VYE"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Yuc-wk-chM" secondAttribute="trailing" id="rPS-cL-1IO"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="qto-GW-vvs" secondAttribute="trailing" id="zli-wE-6sh"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wde-kk-Ftt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="523" y="828"/>
+            <point key="canvasLocation" x="893" y="139"/>
         </scene>
     </scenes>
     <resources>
