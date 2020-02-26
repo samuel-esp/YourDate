@@ -18,6 +18,29 @@ class EmailLoginViewController: UIViewController {
         super.viewDidLoad()
         emailTextField.setLeftPaddingPoints(20)
         passwordTextField.setLeftPaddingPoints(20)
+        handleTextField()
+        
+    }
+    
+    func handleTextField(){
+        
+        emailTextField.addTarget(self, action: #selector(textFieldDidChange), for: UIControl.Event.editingChanged)
+        passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: UIControl.Event.editingChanged)
+        
+    }
+    
+    @objc func textFieldDidChange(){
+        
+        guard let email = emailTextField.text, !email.isEmpty,
+            let password = passwordTextField.text, !password.isEmpty else{
+        signInButton.isEnabled = false
+        signInButton.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        return
+        }
+    
+        signInButton.isEnabled = true
+        signInButton.setTitleColor(UIColor.black, for: UIControl.State.normal)
+
         
     }
     

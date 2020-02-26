@@ -15,16 +15,75 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var errorTextField: UILabel!
     
-    override func viewDidLoad() {
+    override func viewDidLoad(){
         super.viewDidLoad()
         fullNameTextField.setLeftPaddingPoints(20)
         emailTextField.setLeftPaddingPoints(20)
         passwordTextField.setLeftPaddingPoints(20)
         confirmPasswordTextField.setLeftPaddingPoints(20)
+        signUpButton.isEnabled = false
+        signUpButton.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        handleTextField()
+        handleCorrectPasswords()
+    }
+    
+    func handleTextField(){
+        
+        fullNameTextField.addTarget(self, action: #selector(textFieldDidChange), for: UIControl.Event.editingChanged)
+        emailTextField.addTarget(self, action: #selector(textFieldDidChange), for: UIControl.Event.editingChanged)
+        confirmPasswordTextField.addTarget(self, action: #selector(textFieldDidChange), for: UIControl.Event.editingChanged)
+        passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: UIControl.Event.editingChanged)
+        
+    }
+    
+    func handleCorrectPasswords(){
+        
+        passwordTextField.addTarget(self, action: #selector(passwordDidMatch), for: UIControl.Event.editingChanged)
+        confirmPasswordTextField.addTarget(self, action: #selector(passwordDidMatch), for: UIControl.Event.editingChanged)
+        
+    }
+    
+    @objc func textFieldDidChange(){
+        
+        guard let fullName = fullNameTextField.text, !fullName.isEmpty,
+        let email = emailTextField.text, !email.isEmpty,
+        let password = passwordTextField.text, !password.isEmpty,
+        let confirmPassword = confirmPasswordTextField.text, !confirmPassword.isEmpty else{
+            signUpButton.isEnabled = false
+            signUpButton.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+            return
+        }
+        
+        signUpButton.isEnabled = true
+        signUpButton.setTitleColor(UIColor.black, for: UIControl.State.normal)
+
+        
+    }
+    
+    @objc func passwordDidMatch(){
+        
+        let password = passwordTextField.text
+        let confirmPassword = confirmPasswordTextField.text
+        let passBool = !password!.isEmpty
+        let confPassBool = !confirmPassword!.isEmpty
+        
+        if(password==confirmPassword && passBool && confPassBool){
+            errorTextField.text = ""
+            signUpButton.isEnabled = true
+            signUpButton.setTitleColor(UIColor.black, for: UIControl.State.normal)
+            
+        }else{
+            errorTextField.text = "Passwords don't match"
+            signUpButton.isEnabled = false
+            signUpButton.setTitleColor(UIColor.gray, for: UIControl.State.normal)
+        }
+        
     }
     
     @IBAction func signUpButtonPressed(_ sender: Any) {
+        
         
         
         
