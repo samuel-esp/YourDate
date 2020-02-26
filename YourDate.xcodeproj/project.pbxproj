@@ -20,6 +20,9 @@
 		4063E8882406AFA80039AE8B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4063E8872406AFA80039AE8B /* GoogleService-Info.plist */; };
 		4063E88F2406BB640039AE8B /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063E88E2406BB640039AE8B /* LaunchScreenViewController.swift */; };
 		4063E8912406BE240039AE8B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063E8902406BE240039AE8B /* LogInViewController.swift */; };
+		4063E8932406C5DD0039AE8B /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063E8922406C5DD0039AE8B /* EmailLoginViewController.swift */; };
+		4063E8952406C5EB0039AE8B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063E8942406C5EB0039AE8B /* SignUpViewController.swift */; };
+		4063E8972406C5FD0039AE8B /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063E8962406C5FD0039AE8B /* ResetPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,9 @@
 		4063E8872406AFA80039AE8B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4063E88E2406BB640039AE8B /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		4063E8902406BE240039AE8B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		4063E8922406C5DD0039AE8B /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
+		4063E8942406C5EB0039AE8B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4063E8962406C5FD0039AE8B /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		50BC884130AA0231210A6835 /* Pods_YourDate_YourDateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourDate_YourDateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB6229F352B69AE21640E656 /* Pods-YourDateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourDateTests.release.xcconfig"; path = "Target Support Files/Pods-YourDateTests/Pods-YourDateTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF7A789486903ED6EB1638F6 /* Pods_YourDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +218,9 @@
 			children = (
 				4063E88E2406BB640039AE8B /* LaunchScreenViewController.swift */,
 				4063E8902406BE240039AE8B /* LogInViewController.swift */,
+				4063E8922406C5DD0039AE8B /* EmailLoginViewController.swift */,
+				4063E8942406C5EB0039AE8B /* SignUpViewController.swift */,
+				4063E8962406C5FD0039AE8B /* ResetPasswordViewController.swift */,
 			);
 			path = AuthenticationControllers;
 			sourceTree = "<group>";
@@ -466,10 +475,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4063E8952406C5EB0039AE8B /* SignUpViewController.swift in Sources */,
+				4063E8932406C5DD0039AE8B /* EmailLoginViewController.swift in Sources */,
 				4063E8912406BE240039AE8B /* LogInViewController.swift in Sources */,
 				40603589240014510064851D /* AppDelegate.swift in Sources */,
 				4063E88F2406BB640039AE8B /* LaunchScreenViewController.swift in Sources */,
 				4060358B240014510064851D /* SceneDelegate.swift in Sources */,
+				4063E8972406C5FD0039AE8B /* ResetPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

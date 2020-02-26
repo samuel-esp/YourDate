@@ -1,5 +1,5 @@
 //
-//  LogInViewController.swift
+//  ResetPasswordViewController.swift
 //  YourDate
 //
 //  Created by Samuel Esposito on /262/20.
@@ -8,29 +8,25 @@
 
 import UIKit
 
-class LogInViewController: UIViewController {
+class ResetPasswordViewController: UIViewController {
 
-    @IBOutlet weak var logInWithEmailButton: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func logInButtonPressed(_ sender: Any) {
+    @IBAction func goBackToSignInButtonPressed(_ sender: Any) {
         
-        performSegue(withIdentifier: "signInSegue", sender: self)
+        performSegue(withIdentifier: "alreadyUserSegue2", sender: self)
         
     }
     
     @IBAction func signUpButtonPressed(_ sender: Any) {
         
-        performSegue(withIdentifier: "signUpSegue", sender: self)
+        performSegue(withIdentifier: "signUpSegue3", sender: self)
         
     }
-    
-    
     /*
     // MARK: - Navigation
 
