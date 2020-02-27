@@ -9,6 +9,8 @@ target 'YourDate' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
 
   target 'YourDateTests' do
     inherit! :search_paths

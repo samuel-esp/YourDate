@@ -46,7 +46,7 @@ class EmailLoginViewController: UIViewController {
     
     @IBAction func signInButtonPressed(_ sender: Any) {
         
-        
+        performSegue(withIdentifier: "signInCompletedSegue", sender: self)
         
         
     }

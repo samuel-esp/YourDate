@@ -84,8 +84,11 @@ class SignUpViewController: UIViewController {
     
     @IBAction func signUpButtonPressed(_ sender: Any) {
         
-        
-        
+        AuthServices.shared.signUp(email: emailTextField.text!, password: passwordTextField.text!, fullName: fullNameTextField.text!, onSuccess: {
+            self.performSegue(withIdentifier: "signUpCompletedSegue", sender: self)
+        }) { (errorstring) in
+            self.errorTextField.text = errorstring
+        }        
         
     }
     
