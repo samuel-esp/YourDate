@@ -31,17 +31,17 @@
                         <barButtonItem key="leftBarButtonItem" title="Log Out" id="KsE-8H-P40">
                             <connections>
                                 <action selector="logOutButtonTouched:" destination="Ztu-So-vPf" id="A1b-q8-stL"/>
-                                <segue destination="ThU-n2-0Sj" kind="presentation" identifier="toLoginPageSegue" id="6zl-M6-QSp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="logOutButton" destination="KsE-8H-P40" id="Vtl-Ie-CWy"/>
+                        <segue destination="ThU-n2-0Sj" kind="presentation" identifier="toLoginPageSegue" id="wRk-pP-8DO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dY-MS-zGz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6251" y="970"/>
+            <point key="canvasLocation" x="6249" y="984"/>
         </scene>
         <!--Profile-->
         <scene sceneID="iig-u8-M1G">

@@ -23,10 +23,10 @@ class HomeViewController: UIViewController {
     @IBAction func logOutButtonTouched(_ sender: Any) {
 
         print("touched2")
-        /*AuthServices.shared.signOut {
+        AuthServices.shared.signOut {
             print("user not logged")
             self.performSegue(withIdentifier: "toLoginPageSegue", sender: self)
-        }*/
+        }
         
     }
   
