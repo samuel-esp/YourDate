@@ -16,9 +16,18 @@ class LaunchScreenViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        if(AuthServices.shared.isUserLogged()){
+            print("verificato")
+            Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (timer) in
+                self.performSegue(withIdentifier: "autoLoginSegue", sender: self)
+        }
+        }else{
+            print("Non verificato")
         Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (timer) in
             self.performSegue(withIdentifier: "launchScreenSegue", sender: self)
             return
+        }
         }
     }
     
@@ -34,3 +43,4 @@ class LaunchScreenViewController: UIViewController {
     */
 
 }
+

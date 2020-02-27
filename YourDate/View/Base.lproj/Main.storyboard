@@ -9,7 +9,7 @@
         <!--LogIn VIewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="LogIn VIewController" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="LogInViewController" customModule="YourDate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInViewController" title="LogIn VIewController" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="LogInViewController" customModule="YourDate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wNr-Rq-Xgn"/>
                         <viewControllerLayoutGuide type="bottom" id="EqB-rl-qED"/>
@@ -487,6 +487,15 @@
                                     <action selector="signInButtonPressed:" destination="MrJ-4h-qWr" eventType="touchUpInside" id="PgB-gd-ptV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fzr-9f-5bh">
+                                <rect key="frame" x="49" y="266" width="316" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="16A-zK-yh9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -497,13 +506,16 @@
                             <constraint firstItem="OJh-gb-kQE" firstAttribute="top" secondItem="qto-GW-vvs" secondAttribute="bottom" constant="153.5" id="BqQ-Vt-OcV"/>
                             <constraint firstAttribute="bottom" secondItem="1Ug-at-r9J" secondAttribute="bottom" constant="289" id="DaW-4y-5I3"/>
                             <constraint firstItem="qto-GW-vvs" firstAttribute="leading" secondItem="SLi-Mf-5B2" secondAttribute="leadingMargin" constant="63" id="DfA-Cm-CXC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fzr-9f-5bh" secondAttribute="trailing" constant="29" id="F0x-jk-BuG"/>
                             <constraint firstItem="cdX-cn-yyU" firstAttribute="leading" secondItem="SLi-Mf-5B2" secondAttribute="leadingMargin" constant="29" id="HED-12-yQu"/>
+                            <constraint firstItem="OJh-gb-kQE" firstAttribute="top" secondItem="Fzr-9f-5bh" secondAttribute="bottom" constant="10" id="Hfa-xk-tnF"/>
                             <constraint firstAttribute="trailing" secondItem="1Ug-at-r9J" secondAttribute="trailing" constant="129" id="OoC-9J-OBH"/>
                             <constraint firstItem="1Ug-at-r9J" firstAttribute="leading" secondItem="SLi-Mf-5B2" secondAttribute="leading" constant="129" id="RRR-RJ-M7p"/>
                             <constraint firstItem="DZr-pC-veR" firstAttribute="top" secondItem="OJh-gb-kQE" secondAttribute="bottom" constant="20" id="U3x-oo-Ocx"/>
                             <constraint firstItem="DZr-pC-veR" firstAttribute="leading" secondItem="SLi-Mf-5B2" secondAttribute="leadingMargin" constant="29" id="bHW-Rp-6gu"/>
                             <constraint firstItem="qto-GW-vvs" firstAttribute="top" secondItem="auL-FH-Mb5" secondAttribute="bottom" constant="72" id="bN4-Eg-hfv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cdX-cn-yyU" secondAttribute="trailing" constant="29" id="cg7-X6-nhK"/>
+                            <constraint firstItem="Fzr-9f-5bh" firstAttribute="leading" secondItem="SLi-Mf-5B2" secondAttribute="leadingMargin" constant="29" id="f7l-ob-g9l"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OJh-gb-kQE" secondAttribute="trailing" constant="29" id="fSA-l7-WSP"/>
                             <constraint firstItem="Yuc-wk-chM" firstAttribute="top" secondItem="cdX-cn-yyU" secondAttribute="bottom" constant="10" id="pFF-3f-gQR"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Yuc-wk-chM" secondAttribute="trailing" id="rPS-cL-1IO"/>
@@ -512,6 +524,7 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="Rnm-pI-yxr" id="OxT-P7-Sg3"/>
+                        <outlet property="errorTextField" destination="Fzr-9f-5bh" id="rqK-bY-Bzk"/>
                         <outlet property="passwordTextField" destination="NrH-Z2-anm" id="olg-aO-4VZ"/>
                         <outlet property="signInButton" destination="cdX-cn-yyU" id="IjX-0K-2s9"/>
                         <segue destination="78g-Uw-dJH" kind="presentation" identifier="signUpSegue2" id="ccE-GZ-Twl"/>
@@ -689,6 +702,7 @@
                     </view>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="launchScreenSegue" id="1m0-bP-3rG"/>
+                        <segue destination="YfX-uY-xux" kind="presentation" identifier="autoLoginSegue" id="AjB-7h-6YD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5I-sQ-8rU" sceneMemberID="firstResponder"/>
@@ -709,8 +723,8 @@
         <image name="facebook" width="316" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Cjf-0v-tr4"/>
-        <segue reference="sGw-Ex-KVP"/>
-        <segue reference="ccE-GZ-Twl"/>
+        <segue reference="AjB-7h-6YD"/>
+        <segue reference="rqe-VQ-xgz"/>
+        <segue reference="hGd-FG-OFA"/>
     </inferredMetricsTieBreakers>
 </document>

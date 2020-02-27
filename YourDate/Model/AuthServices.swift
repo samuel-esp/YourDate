@@ -20,7 +20,7 @@ class AuthServices{
         //1: Authenticate User
         Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
             if(error != nil){
-                //2: If The Authentication Isn't Succesful, Escape
+                //2: If The Authentication Isn't Succesful, Escape With The Error
                 onError(error!.localizedDescription)
                 return
             }else{
@@ -30,21 +30,38 @@ class AuthServices{
             }
             
         }
+    }
         
-        /*func signIn(){
+    func signIn(email: String, password: String, onSuccess: @escaping () -> Void, onError: @escaping (_ error: String) -> Void) -> Void{
             
-            Auth.auth().sign
+            //1: Authenticate User
+            Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+                if(error != nil){
+                    //2: If The Authentication Isn't Succesful Escape With The Error
+                    onError(error!.localizedDescription)
+                    return
+                }
+                //3: If The Authentication Is Succesful Escape With Success
+                onSuccess()
+            }
             
-            
-        }*/
+        }
         
+    func signOut(onSuccess: @escaping () -> Void) -> Void {
+        
+        do{
+            try Auth.auth().signOut()
+            onSuccess()
+        }catch let error{
+            print(error)
+        }
         
     }
     
-    
-    
-    
-    
-    
-    
+    func isUserLogged() -> Bool{
+        
+        return Auth.auth().currentUser != nil
+        
+    }
 }
+    

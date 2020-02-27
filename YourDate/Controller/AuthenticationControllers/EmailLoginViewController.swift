@@ -13,6 +13,7 @@ class EmailLoginViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var errorTextField: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +46,12 @@ class EmailLoginViewController: UIViewController {
     }
     
     @IBAction func signInButtonPressed(_ sender: Any) {
-        
-        performSegue(withIdentifier: "signInCompletedSegue", sender: self)
+    
+        AuthServices.shared.signIn(email: emailTextField.text!, password: passwordTextField.text!, onSuccess: {
+            self.performSegue(withIdentifier: "signInCompletedSegue", sender: self)
+        }) { (error) in
+            self.errorTextField.text = error
+        }
         
         
     }

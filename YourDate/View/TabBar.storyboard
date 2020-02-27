@@ -6,10 +6,18 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--LogInViewController-->
+        <scene sceneID="fX2-xN-B4P">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="LogInViewController" id="ThU-n2-0Sj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t7b-fZ-Cbl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6251" y="1418"/>
+        </scene>
         <!--Home-->
         <scene sceneID="HRY-5T-kUK">
             <objects>
-                <viewController id="Ztu-So-vPf" sceneMemberID="viewController">
+                <viewController id="Ztu-So-vPf" customClass="HomeViewController" customModule="YourDate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KQg-iE-sds"/>
                         <viewControllerLayoutGuide type="bottom" id="U3B-Hj-8mE"/>
@@ -19,7 +27,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="HCa-fs-Y0M"/>
+                    <navigationItem key="navigationItem" title="Home" id="HCa-fs-Y0M">
+                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="KsE-8H-P40">
+                            <connections>
+                                <action selector="logOutButtonTouched:" destination="Ztu-So-vPf" id="A1b-q8-stL"/>
+                                <segue destination="ThU-n2-0Sj" kind="presentation" identifier="toLoginPageSegue" id="6zl-M6-QSp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="logOutButton" destination="KsE-8H-P40" id="Vtl-Ie-CWy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dY-MS-zGz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="4055" y="970"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--tabBarController-->
         <scene sceneID="VI3-cE-P9H">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarStoryboard" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="MYX-L6-Bdp" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarStoryboard" title="tabBarController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="MYX-L6-Bdp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sPh-Pb-ihH">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
