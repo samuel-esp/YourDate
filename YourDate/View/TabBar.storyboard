@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="HRY-5T-kUK">
             <objects>
                 <viewController id="Ztu-So-vPf" sceneMemberID="viewController">
@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="HCa-fs-Y0M"/>
+                    <navigationItem key="navigationItem" title="Home" id="HCa-fs-Y0M"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dY-MS-zGz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5771" y="970"/>
+            <point key="canvasLocation" x="6251" y="970"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile-->
         <scene sceneID="iig-u8-M1G">
             <objects>
                 <viewController id="V3A-Zx-ZHO" sceneMemberID="viewController">
@@ -38,13 +38,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cZf-o9-Xgx"/>
+                    <navigationItem key="navigationItem" title="Profile" id="cZf-o9-Xgx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BEf-sQ-0ZE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6913" y="-1460"/>
+            <point key="canvasLocation" x="1958" y="970"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile-->
         <scene sceneID="tpb-vt-NOz">
             <objects>
                 <viewController id="ZXX-vh-FFm" sceneMemberID="viewController">
@@ -57,7 +57,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="FZP-cy-xuJ"/>
+                    <navigationItem key="navigationItem" title="Profile" id="FZP-cy-xuJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zaw-j1-it7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,6 +72,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="sTD-vK-8Vc" kind="relationship" relationship="viewControllers" id="klc-wE-B8D"/>
@@ -83,15 +88,18 @@
             </objects>
             <point key="canvasLocation" x="4055" y="-1063"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="6rW-Br-oIa">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xo5-HB-k0m" sceneMemberID="viewController">
+                <navigationController title="Profile" automaticallyAdjustsScrollViewInsets="NO" id="Xo5-HB-k0m" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" image="person.fill" catalog="system" id="YOh-rY-rhe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e3v-nu-idi">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -100,17 +108,20 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zf6-Z8-KCJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5687" y="-1460"/>
+            <point key="canvasLocation" x="1958" y="228"/>
         </scene>
-        <!--Swipe-->
+        <!--Chat-->
         <scene sceneID="3tz-Ng-cca">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZD2-Cc-8mO" sceneMemberID="viewController">
+                <navigationController title="Chat" automaticallyAdjustsScrollViewInsets="NO" id="ZD2-Cc-8mO" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Swipe" image="message.fill" catalog="system" id="FW5-8e-8ey"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eok-Zw-oez">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -121,15 +132,18 @@
             </objects>
             <point key="canvasLocation" x="4055" y="228"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="f9K-1H-872">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sTD-vK-8Vc" sceneMemberID="viewController">
+                <navigationController title="Home" automaticallyAdjustsScrollViewInsets="NO" id="sTD-vK-8Vc" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" image="house.fill" catalog="system" id="pVw-B0-A1p"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="48g-dA-8iH">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.34509803919999998" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -138,7 +152,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZa-VC-AzS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5771" y="228"/>
+            <point key="canvasLocation" x="6252" y="228"/>
         </scene>
     </scenes>
     <resources>
