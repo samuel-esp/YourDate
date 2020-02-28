@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 
@@ -88,7 +89,7 @@ class SignUpViewController: UIViewController {
             self.performSegue(withIdentifier: "signUpCompletedSegue", sender: self)
         }) { (errorstring) in
             self.errorTextField.text = errorstring
-        }        
+        }
         
     }
     
@@ -97,17 +98,6 @@ class SignUpViewController: UIViewController {
         performSegue(withIdentifier: "alreadyUserSegue", sender: self)
         
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 

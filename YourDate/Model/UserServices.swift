@@ -18,15 +18,22 @@ class UserServices{
     
     func registerUser(UID: String, email: String, fullName: String) -> Void {
 
-        //1: Create New Instance of User Dictionary
-        var newUser: [String:String] = [:]
-        newUser["email"] = email
-        newUser["fullName"] = fullName
+        //1: Create New Instance of User
+        let newUser = User(UID: UID, fullName: fullName, email: email)
         
-        //2: Append User To The Database
-        usersRoot.child(UID).setValue(newUser)
+        //2: Append User Info To The Database
+        usersRoot.child(UID).setValue(newUser.info)
         
     }
+    
+    /*func editUser(UID: String){
+        
+        usersRoot.
+        
+        
+        
+        
+    }*/
     
     
     

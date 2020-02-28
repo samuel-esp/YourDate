@@ -11,20 +11,27 @@ import UIKit
 class HomeViewController: UIViewController {
 
 
+    @IBOutlet weak var currentUserButton: UIBarButtonItem!
     @IBOutlet weak var logOutButton: UIBarButtonItem!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("touched")
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func currentUserButtonTouched(_ sender: Any) {
+        
+        AuthServices.shared.currentUser()
+        
     }
     
     @IBAction func logOutButtonTouched(_ sender: Any) {
 
-        print("touched2")
+        print("user is logging out")
+        
         AuthServices.shared.signOut {
-            print("user not logged")
+            print("success")
             self.performSegue(withIdentifier: "toLoginPageSegue", sender: self)
         }
         

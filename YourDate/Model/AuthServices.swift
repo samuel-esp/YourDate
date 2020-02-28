@@ -25,7 +25,10 @@ class AuthServices{
                 return
             }else{
                 //3: If The Authentication Is Correct Save User To Database
+                print("signup completed")
+                print(user!.user.displayName)
                 UserServices.shared.registerUser(UID: user!.user.uid, email: email, fullName: fullName)
+                Auth.auth().currentUser?.displayName
                 onSuccess()
             }
             
@@ -40,9 +43,10 @@ class AuthServices{
                     //2: If The Authentication Isn't Succesful Escape With The Error
                     onError(error!.localizedDescription)
                     return
-                }
+                }else{
                 //3: If The Authentication Is Succesful Escape With Success
                 onSuccess()
+                }
             }
             
         }
@@ -59,8 +63,14 @@ class AuthServices{
     }
     
     func isUserLogged() -> Bool{
-        
+
         return Auth.auth().currentUser != nil
+        
+    }
+    
+    func currentUser() -> Void{
+        
+        print(Auth.auth().currentUser)
         
     }
 }

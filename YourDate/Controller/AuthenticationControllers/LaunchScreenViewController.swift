@@ -7,40 +7,34 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LaunchScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        Auth.auth().currentUser
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         if(AuthServices.shared.isUserLogged()){
-            print("verificato")
+            print(Auth.auth().currentUser)
+            AuthServices.shared.currentUser()
             Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (timer) in
                 self.performSegue(withIdentifier: "autoLoginSegue", sender: self)
         }
         }else{
-            print("Non verificato")
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (timer) in
+            print(Auth.auth().currentUser)
+            //AuthServices.shared.currentUser()
+            Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (timer) in
             self.performSegue(withIdentifier: "launchScreenSegue", sender: self)
             return
         }
         }
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
