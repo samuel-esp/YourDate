@@ -12,6 +12,9 @@
 		4021E3912409261F001B44FA /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E3902409261F001B44FA /* ChatTableViewCell.swift */; };
 		4021E393240928DC001B44FA /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E392240928DC001B44FA /* ChatTableViewController.swift */; };
 		4021E39524093E1A001B44FA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4021E39424093E1A001B44FA /* User.swift */; };
+		404A4728240AD764007940A0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404A4727240AD764007940A0 /* ProfileViewController.swift */; };
+		404A4732240AE523007940A0 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404A4731240AE523007940A0 /* AboutTableViewController.swift */; };
+		404A4734240AEBDE007940A0 /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404A4733240AEBDE007940A0 /* TestTableViewController.swift */; };
 		40603589240014510064851D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40603588240014510064851D /* AppDelegate.swift */; };
 		4060358B240014510064851D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060358A240014510064851D /* SceneDelegate.swift */; };
 		40603590240014510064851D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4060358E240014510064851D /* Main.storyboard */; };
@@ -74,6 +77,9 @@
 		4021E3902409261F001B44FA /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		4021E392240928DC001B44FA /* ChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
 		4021E39424093E1A001B44FA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		404A4727240AD764007940A0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		404A4731240AE523007940A0 /* AboutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
+		404A4733240AEBDE007940A0 /* TestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
 		40603585240014510064851D /* YourDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40603588240014510064851D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4060358A240014510064851D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +165,25 @@
 				BB6229F352B69AE21640E656 /* Pods-YourDateTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		404A4725240AD702007940A0 /* ChatViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4021E392240928DC001B44FA /* ChatTableViewController.swift */,
+				4021E3902409261F001B44FA /* ChatTableViewCell.swift */,
+			);
+			path = ChatViewControllers;
+			sourceTree = "<group>";
+		};
+		404A4726240AD723007940A0 /* ProfileViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				404A4727240AD764007940A0 /* ProfileViewController.swift */,
+				404A4731240AE523007940A0 /* AboutTableViewController.swift */,
+				404A4733240AEBDE007940A0 /* TestTableViewController.swift */,
+			);
+			path = ProfileViewControllers;
 			sourceTree = "<group>";
 		};
 		4060357C240014510064851D = {
@@ -278,9 +303,9 @@
 		4072A3F624084F81006AE1F7 /* TabBarViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				404A4726240AD723007940A0 /* ProfileViewControllers */,
+				404A4725240AD702007940A0 /* ChatViewControllers */,
 				4072A3F724084FED006AE1F7 /* HomeViewController.swift */,
-				4021E3902409261F001B44FA /* ChatTableViewCell.swift */,
-				4021E392240928DC001B44FA /* ChatTableViewController.swift */,
 			);
 			path = TabBarViewControllers;
 			sourceTree = "<group>";
@@ -553,15 +578,18 @@
 				4063E8952406C5EB0039AE8B /* SignUpViewController.swift in Sources */,
 				4072A3AE2407E278006AE1F7 /* UserServices.swift in Sources */,
 				4063E8932406C5DD0039AE8B /* EmailLoginViewController.swift in Sources */,
+				404A4728240AD764007940A0 /* ProfileViewController.swift in Sources */,
 				4063E8912406BE240039AE8B /* LogInViewController.swift in Sources */,
 				4072A3AB2407D1C8006AE1F7 /* AuthServices.swift in Sources */,
 				4072A3F824084FED006AE1F7 /* HomeViewController.swift in Sources */,
 				40603589240014510064851D /* AppDelegate.swift in Sources */,
 				4063E88F2406BB640039AE8B /* LaunchScreenViewController.swift in Sources */,
 				4021E3912409261F001B44FA /* ChatTableViewCell.swift in Sources */,
+				404A4732240AE523007940A0 /* AboutTableViewController.swift in Sources */,
 				4060358B240014510064851D /* SceneDelegate.swift in Sources */,
 				4063E8972406C5FD0039AE8B /* ResetPasswordViewController.swift in Sources */,
 				4021E393240928DC001B44FA /* ChatTableViewController.swift in Sources */,
+				404A4734240AEBDE007940A0 /* TestTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
